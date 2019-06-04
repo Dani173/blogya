@@ -107,7 +107,7 @@ class __TwigTemplate_c7b74408967b515d1433fec03c38c0e75412afec16bb8c034d614e8833b
         echo "    ";
         $this->displayParentBlock("body", $context, $blocks);
         echo "
-    <div class=\"col-lg-6 box-form\">
+
     <h1>New post</h1>
     ";
         // line 24
@@ -138,7 +138,7 @@ class __TwigTemplate_c7b74408967b515d1433fec03c38c0e75412afec16bb8c034d614e8833b
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 30, $this->source); })()), 'form_end');
         echo "
 
-    </div>
+   
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -219,7 +219,7 @@ class __TwigTemplate_c7b74408967b515d1433fec03c38c0e75412afec16bb8c034d614e8833b
 {% endblock %}
 {% block body %}
     {{ parent() }}
-    <div class=\"col-lg-6 box-form\">
+
     <h1>New post</h1>
     {{form_start(form)}}
     {{ form_row(form.title) }}
@@ -229,7 +229,7 @@ class __TwigTemplate_c7b74408967b515d1433fec03c38c0e75412afec16bb8c034d614e8833b
     {{ form_errors(form) }}
     {{ form_end(form) }}
 
-    </div>
+   
 {%endblock%}
 {% block javascripts %}
     {{ parent() }}
@@ -242,6 +242,6 @@ class __TwigTemplate_c7b74408967b515d1433fec03c38c0e75412afec16bb8c034d614e8833b
         });
     </script>
 {% endblock %}
-", "post/post.html.twig", "/home/linux/www/projects/blog/templates/post/post.html.twig");
+", "post/post.html.twig", "/home/linux/Imatges/blog/templates/post/post.html.twig");
     }
 }

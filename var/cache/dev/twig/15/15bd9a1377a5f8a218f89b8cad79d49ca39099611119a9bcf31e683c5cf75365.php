@@ -93,7 +93,7 @@ class __TwigTemplate_c8e2b6bff61ffe1a29398a401b716b52d55ff5743c649e3eeef09092c28
         echo $this->extensions['Symfony\Bridge\Twig\Extension\DumpExtension']->dump($this->env, $context, (isset($context["comments"]) || array_key_exists("comments", $context) ? $context["comments"] : (function () { throw new RuntimeError('Variable "comments" does not exist.', 7, $this->source); })()));
         echo "
     <div class=\"container\">
-        <div class=\"titulo\">
+        <div class=\"titulo col-lg-6 box-form\">
             <h1>";
         // line 10
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 10, $this->source); })()), "title", []), "html", null, true);
@@ -196,7 +196,7 @@ class __TwigTemplate_c8e2b6bff61ffe1a29398a401b716b52d55ff5743c649e3eeef09092c28
 {% block body %}
     {{  dump(comments) }}
     <div class=\"container\">
-        <div class=\"titulo\">
+        <div class=\"titulo col-lg-6 box-form\">
             <h1>{{ post.title }}</h1>
             <div><h3>{{ post.content | raw }}</h3></div>
             <div><b>{{ post.author }}</b> creado el <b> {{ post.createdAt|date('Y-m-d') }}</b></div>

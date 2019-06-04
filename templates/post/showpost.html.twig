@@ -6,7 +6,7 @@
 {% block body %}
     {{  dump(comments) }}
     <div class="container">
-        <div class="titulo">
+        <div class="titulo col-lg-6 box-form">
             <h1>{{ post.title }}</h1>
             <div><h3>{{ post.content | raw }}</h3></div>
             <div><b>{{ post.author }}</b> creado el <b> {{ post.createdAt|date('Y-m-d') }}</b></div>

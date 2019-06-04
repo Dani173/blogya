@@ -89,7 +89,7 @@ class __TwigTemplate_bc9340df30186383dc2c46c11c34f28b82b3edd3aa43f7d1628f8e64d38
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
-        echo "    <h1>Inicio</h1>
+        echo "    <h1>Blog</h1>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -122,7 +122,7 @@ class __TwigTemplate_bc9340df30186383dc2c46c11c34f28b82b3edd3aa43f7d1628f8e64d38
     <link rel=\"stylesheet\" href=\"{{ asset('css/home.css') }}\">
 {% endblock %}
 {% block body %}
-    <h1>Inicio</h1>
+    <h1>Blog</h1>
 {% endblock %}", "home/home.html.twig", "/home/linux/Imatges/blog/templates/home/home.html.twig");
     }
 }

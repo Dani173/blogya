@@ -35,13 +35,10 @@ class PostController extends AbstractController
     {
         //Creau nuevo objeto Post
         $post= new Post();
-        $post-> setTitle('write a post title');
-
         $user = $this->getDoctrine()->getRepository(User::class)->find($this->getUser());
         $post->setAuthor($user->getUsername());
         $post->setCreatedAt(new \DateTime());
         $post->setPublishedAt(null);
-
         //Crear formulario
         $form=$this->createForm(PostType::class, $post);
 
@@ -61,8 +58,8 @@ class PostController extends AbstractController
             //Fluir hacia la base de datos
             return $this->redirectToRoute('app_homepage');
 
-        }
 
+        }
         //render the form
         return $this->render('post/post.html.twig', [
             'error'=>$error,

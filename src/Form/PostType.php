@@ -26,13 +26,15 @@ class PostType extends AbstractType
             ->add('title', null, [
                 'attr' => ['autofocus' => true],
                 'label' => 'Title',
+
                 'attr'=>[
-                    'class'=>'form-control'
+                    'class'=>'form-control',
+                    'placeholder'=>'Title'
                 ]
             ])
             ->add('content', null, [
                 'attr' => ['rows' => 20],
-                'label' => 'Contents',
+                'label' => 'Content',
                 'attr'=>[
                     'class'=>'form-control'
                 ]

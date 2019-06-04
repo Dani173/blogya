@@ -61,7 +61,10 @@ class __TwigTemplate_965bdaec804885d98b414c1efdce14691cff396850507b1cebc48b52777
     <header>
         <nav class=\"navbar navbar-expand-md navbar-dark fixed-top bg-dark\">
             <div>
-                <a class=\"navbar-brand css1\" href=\"#\">Blog Dani Gonzalez</a>
+                <a class=\"navbar-brand css1\" href=\"";
+        // line 17
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_homepage");
+        echo "\">Blog Dani Gonzalez</a>
                 <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
                     <span class=\"navbar-toggler-icon\"></span>
                 </button>
@@ -69,48 +72,43 @@ class __TwigTemplate_965bdaec804885d98b414c1efdce14691cff396850507b1cebc48b52777
 
             <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">
                 <ul class=\"navbar-nav mr-auto\">
-                    <li class=\"nav-item active\">
-                        <a class=\"nav-link\" href=\"";
-        // line 26
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_homepage");
-        echo "\">Inicio<span class=\"sr-only\">(current)</span></a>
-                    </li>
+
                     ";
-        // line 28
-        if ((null === twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 28, $this->source); })()), "user", []))) {
+        // line 26
+        if ((null === twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 26, $this->source); })()), "user", []))) {
             echo ";
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-            // line 30
+            // line 28
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "\">Login</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-            // line 33
+            // line 31
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
             echo "\">Register</a>
                         </li>
                     ";
         } else {
-            // line 36
+            // line 34
             echo "                        ";
             if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-                // line 37
+                // line 35
                 echo "                            <li class=\"nav-item\">
                                 <a class=\"nav-link\" href=\"";
-                // line 38
+                // line 36
                 echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin");
                 echo "\">Admin</a>
                             </li>
                         ";
             }
-            // line 41
+            // line 39
             echo "
 
                         <li class=\"nav-item float-right\" id=\"posts_button\">
                             <a class=\"btn nav-link \" href=\"";
-            // line 44
+            // line 42
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_posts");
             echo "\">
                                 <span class=\"fas  fa-post\"></span>Posts
@@ -118,7 +116,7 @@ class __TwigTemplate_965bdaec804885d98b414c1efdce14691cff396850507b1cebc48b52777
                         </li>
                         <li class=\"nav-item float-right\" id=\"posts_button\">
                             <a class=\"btn nav-link \" href=\"";
-            // line 49
+            // line 47
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("new_post");
             echo "\">
                                 <span class=\"fas  fa-post\"></span>Nuevo post
@@ -127,28 +125,28 @@ class __TwigTemplate_965bdaec804885d98b414c1efdce14691cff396850507b1cebc48b52777
 
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-            // line 55
+            // line 53
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Logout</a>
 
                         </li>
                     ";
         }
-        // line 59
+        // line 57
         echo "                </ul>
             </div>
         </nav>
     </header>
     ";
-        // line 63
+        // line 61
         $this->displayBlock('body', $context, $blocks);
-        // line 64
+        // line 62
         echo "    ";
         $this->displayBlock('footer', $context, $blocks);
-        // line 65
+        // line 63
         echo "    ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 70
+        // line 68
         echo "    </body>
 </html>
 ";
@@ -203,7 +201,7 @@ class __TwigTemplate_965bdaec804885d98b414c1efdce14691cff396850507b1cebc48b52777
 
     }
 
-    // line 63
+    // line 61
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -220,7 +218,7 @@ class __TwigTemplate_965bdaec804885d98b414c1efdce14691cff396850507b1cebc48b52777
 
     }
 
-    // line 64
+    // line 62
     public function block_footer($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -237,7 +235,7 @@ class __TwigTemplate_965bdaec804885d98b414c1efdce14691cff396850507b1cebc48b52777
 
     }
 
-    // line 65
+    // line 63
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -246,7 +244,7 @@ class __TwigTemplate_965bdaec804885d98b414c1efdce14691cff396850507b1cebc48b52777
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 66
+        // line 64
         echo "        <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>
         <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js\" integrity=\"sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut\" crossorigin=\"anonymous\"></script>
         <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js\" integrity=\"sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k\" crossorigin=\"anonymous\"></script>
@@ -271,7 +269,7 @@ class __TwigTemplate_965bdaec804885d98b414c1efdce14691cff396850507b1cebc48b52777
 
     public function getDebugInfo()
     {
-        return array (  250 => 66,  241 => 65,  224 => 64,  207 => 63,  194 => 8,  191 => 7,  182 => 6,  164 => 5,  152 => 70,  149 => 65,  146 => 64,  144 => 63,  138 => 59,  131 => 55,  122 => 49,  114 => 44,  109 => 41,  103 => 38,  100 => 37,  97 => 36,  91 => 33,  85 => 30,  80 => 28,  75 => 26,  58 => 11,  56 => 6,  52 => 5,  46 => 1,);
+        return array (  248 => 64,  239 => 63,  222 => 62,  205 => 61,  192 => 8,  189 => 7,  180 => 6,  162 => 5,  150 => 68,  147 => 63,  144 => 62,  142 => 61,  136 => 57,  129 => 53,  120 => 47,  112 => 42,  107 => 39,  101 => 36,  98 => 35,  95 => 34,  89 => 31,  83 => 28,  78 => 26,  66 => 17,  58 => 11,  56 => 6,  52 => 5,  46 => 1,);
     }
 
     public function getSourceContext()
@@ -292,7 +290,7 @@ class __TwigTemplate_965bdaec804885d98b414c1efdce14691cff396850507b1cebc48b52777
     <header>
         <nav class=\"navbar navbar-expand-md navbar-dark fixed-top bg-dark\">
             <div>
-                <a class=\"navbar-brand css1\" href=\"#\">Blog Dani Gonzalez</a>
+                <a class=\"navbar-brand css1\" href=\"{{ path('app_homepage') }}\">Blog Dani Gonzalez</a>
                 <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
                     <span class=\"navbar-toggler-icon\"></span>
                 </button>
@@ -300,9 +298,7 @@ class __TwigTemplate_965bdaec804885d98b414c1efdce14691cff396850507b1cebc48b52777
 
             <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">
                 <ul class=\"navbar-nav mr-auto\">
-                    <li class=\"nav-item active\">
-                        <a class=\"nav-link\" href=\"{{ path('app_homepage') }}\">Inicio<span class=\"sr-only\">(current)</span></a>
-                    </li>
+
                     {% if app.user is null %};
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"{{ path('app_login') }}\">Login</a>

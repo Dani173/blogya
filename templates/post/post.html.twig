@@ -19,7 +19,6 @@
 {% endblock %}
 {% block body %}
     {{ parent() }}
-    <div class="col-lg-6 box-form">
     <h1>New post</h1>
     {{form_start(form)}}
     {{ form_row(form.title) }}
@@ -29,7 +28,7 @@
     {{ form_errors(form) }}
     {{ form_end(form) }}
 
-    </div>
+
 {%endblock%}
 {% block javascripts %}
     {{ parent() }}
