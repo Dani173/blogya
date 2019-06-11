@@ -950,3 +950,6 @@ ee4fe9,::1,GET,http://localhost:8080/post,1559659453,,200
 bd49ac,::1,POST,http://localhost:8080/post/4/show,1559659485,,200
 a70dec,::1,POST,http://localhost:8080/post/4/show,1559659520,,200
 e04533,::1,POST,http://localhost:8080/post/4/show,1559659537,,200
+14e46a,::1,GET,http://localhost:8080/post,1559661563,,200
+893446,::1,GET,http://localhost:8080/post/4/delete,1559661566,1c1981,200
+1c1981,::1,GET,http://localhost:8080/post/4/delete,1559661566,,500
